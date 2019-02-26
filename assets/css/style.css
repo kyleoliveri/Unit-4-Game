@@ -1,0 +1,41 @@
+/* MAIN */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    letter-spacing: 3px;
+    font-family: 'Cinzel', serif;
+}
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+.footer,
+.push {
+    height: 50px;
+}
+
+/* HEADER */
+.jumbotron {
+    background: rgba(0, 0, 0, 0.26);
+    color: white;
+}
+
+/* GAME SECTION */
+.gameBG {
+    background: rgba(226, 226, 226, 0.171);
+    border: solid 1px rgba(255, 255, 255, 0.568);
+}
+.gameBox{
+    padding: 15px;
+}
+#randomNumber {
+    font-size: 22px;
+}
+
+/* FOOTER */
+.footerDev {
+    margin-bottom: -15px;
+    font-size: 12px;
+}

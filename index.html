@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Crystal Collector | Kyle Oliveri</title>
+</head>
+<body background="assets/images/rockywall.png">
+
+    <div class="wrapper">
+
+        <!--JUMBOTRON HEADER-->
+        <header>
+                <div class="headerwrap">
+                    <div class="jumbotron">
+                        <h1 class="display-4 text-center h1Header">Crystal Collector</h1>
+                        <p class="text-center pHeader"></p>
+                    </div>
+                </div>
+            </header>
+
+        <!--GAME SECTION-->
+        <div class="container gameBG">
+               
+            <div class="row">
+
+                <!--GAME SECTION-->
+                <div class="col text-center game-section">
+
+                    <div class="gameBox">
+                        <!-- RULE SECTION -->
+                        <h3>Rules:</h3>
+                        <p>You will be given a random number at the start of the game.</p>
+                        <p>There are four crystal below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+                        <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number</p>
+                        <p>The value of each crystal is hidden from you until you click on it.</p>
+                        <p>Each time the game starts, the game will change the values of each crystal.</p>
+
+                            <hr>
+
+                        <h4>Random Number:</h4>
+                        <div id="randomNumber"></div>
+                        
+                            <hr>
+
+                        <!-- CRYSTAL IMAGES -->
+                        <div id="crystal1"></div>
+                        <div id="crystal2"></div>
+                        <div id="crystal3"></div>
+                        <div id="crystal4"></div>
+
+                            <br>
+
+                        <h4>Crystal Count:</h4>
+                        <div id="crystalCounter"></div>
+
+                            <hr>
+                        
+                        <!-- WIN / LOSS COUNT -->
+                        <div id="wins"></div>
+                            
+                        <div id="loss"></div>
+
+                    </div>
+                        
+                </div>
+
+            </div>
+
+        </div>
+
+    <div class="push"></div>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="footer text-center">
+        
+        Copyright&copy;
+        <p class="footerDev">Developed by Kyle Oliveri</p>
+
+    </footer>
+
+    <script>
+
+        gameReset();
+        
+    </script>
+
+<script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
