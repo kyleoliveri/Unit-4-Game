@@ -21,10 +21,9 @@
                 <div class="headerwrap">
                     <div class="jumbotron">
                         <h1 class="display-4 text-center h1Header">Crystal Collector</h1>
-                        <p class="text-center pHeader"></p>
                     </div>
                 </div>
-            </header>
+        </header>
 
         <!--GAME SECTION-->
         <div class="container gameBG">
@@ -50,16 +49,31 @@
                         
                             <hr>
 
-                        <!-- CRYSTAL IMAGES -->
-                        <div id="crystal1"></div>
-                        <div id="crystal2"></div>
-                        <div id="crystal3"></div>
-                        <div id="crystal4"></div>
+                            <!-- CRYSTAL IMAGES -->
+                            <div class="row">
+
+                                <div class="col-3">
+                                        <div id="crystal1" class="crystal"></div>
+                                </div>
+                            
+                                <div class="col-3">
+                                        <div id="crystal2" class="crystal"></div>
+                                </div>
+
+                                <div class="col-3">
+                                        <div id="crystal3" class="crystal"></div>
+                                </div>
+
+                                <div class="col-3">
+                                        <div id="crystal4" class="crystal"></div>
+                                </div>
+
+                            </div>
 
                             <br>
 
-                        <h4>Crystal Count:</h4>
-                        <div id="crystalCounter"></div>
+                            <h4>Crystal Count:</h4>
+                            <div id="crystalCounter"></div>
 
                             <hr>
                         
@@ -80,6 +94,8 @@
     </div>
 
     <!--FOOTER-->
+<div class="footerBox">
+    
     <footer class="footer text-center">
         
         Copyright&copy;
@@ -87,11 +103,7 @@
 
     </footer>
 
-    <script>
-
-        gameReset();
-        
-    </script>
+</div>
 
 <script src="assets/javascript/game.js"></script>
 
